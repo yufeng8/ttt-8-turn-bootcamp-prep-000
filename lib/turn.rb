@@ -6,7 +6,8 @@ def turn(board)
    if valid_move?(board, input,value="X") == true
       move(board, input, value)
    else
-     turn(board)
+     puts "Please enter 1-9:"
+     user_input = gets.strip
    end
 end
 
