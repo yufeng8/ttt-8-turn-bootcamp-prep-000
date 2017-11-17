@@ -41,7 +41,7 @@ def input_to_index(user_input)
  end
 end
 
-def valid_move?(board, index)
+def valid_move?(board, index, value = "X")
   if ((index.between?(0, 8)  && board[index] == " ") ||
      (index.between?(0, 8)  && board[index] == "") ||
      (index.between?(0, 8)  && board[index] == nil))
