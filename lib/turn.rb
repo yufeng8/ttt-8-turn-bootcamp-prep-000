@@ -5,7 +5,7 @@ def turn(board)
   input_to_index(user_input)
   valid_move?(board, index,value="X")
 
-  move(board, index, value)
+  move(board, input_to_index, value)
 end
 
 
