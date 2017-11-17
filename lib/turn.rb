@@ -12,6 +12,7 @@ def display_board(board)
   end
   puts rows.join("\n" + '-'*11 + "\n")
 end
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
