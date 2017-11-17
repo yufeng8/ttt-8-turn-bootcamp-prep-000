@@ -3,9 +3,9 @@ def turn(board)
   user_input = gets.strip
   display_board(board)
   input_to_index(user_input)
-  valid_move?(board, input,value="X")
+  valid_move?(board, index,value="X")
 
-  move(board, input, value)
+  move(board, index, value)
 end
 
 
