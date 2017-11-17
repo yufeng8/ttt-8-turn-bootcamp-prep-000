@@ -1,6 +1,7 @@
 def turn(board)
   display_board(board)
-  valid_move?()
+  input_to_index(user_input)
+  valid_move?(board, index,value="X")
   move(board, index, value)
 end
 
@@ -34,11 +35,6 @@ def input_to_index(user_input)
  end
 end
 
-def move(board, index, value = "X")
-  board[index] = value
-  puts board
-end
-
 def valid_move?(board, index)
   if ((index.between?(0, 8)  && board[index] == " ") ||
      (index.between?(0, 8)  && board[index] == "") ||
@@ -47,6 +43,12 @@ def valid_move?(board, index)
   elsif (board[index] == "X" || board[index] == "O")
     return false
   end
+end
+
+
+def move(board, index, value = "X")
+  board[index] = value
+  puts board
 end
 
 =begin
