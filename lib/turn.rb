@@ -4,6 +4,8 @@ def turn(board)
   move(board, index, value)
 end
 
+
+=begin
 def display_board(board)
   rows = (0...3).collect do |row_index|
     i = row_index*3
@@ -12,6 +14,7 @@ def display_board(board)
   end
   puts rows.join("\n" + '-'*11 + "\n")
 end
+=end
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
